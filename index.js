@@ -1,6 +1,5 @@
 const {Client, Intents} = require('discord.js');
 const {token, bot, responses, support_channels} = require('./config');
-const respond = require('./respond')
 const contentValidator = require('./classes/ContentValidator')
 
 // Create a new client instance
@@ -18,10 +17,10 @@ client.once('ready', async () => {
 client.on('messageCreate', async (message) => {
     if (message.author.bot) return;
     if (!support_channels.includes(message.channelId)) return;
-    let response = await contentValidator.validateContent(message)
+    let response = await contentValidator.validateContent(message).catch(console.error)
 
     if (response) {
-        respond(message, response)
+        message.reply(response.content)
             .then(message => console.log(`responded to '${message.attachments.size > 0 ? 'image' : message.content}'`))
             .catch(message => console.log(`failed to respond to '${message.attachments.size > 0 ? 'image' : message.content}'`))
     }

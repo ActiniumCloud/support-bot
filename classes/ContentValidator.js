@@ -1,4 +1,4 @@
-const {Message} = require('discord.js')
+const {Message, MessageAttachment} = require('discord.js')
 const Tesseract = require('tesseract.js')
 const axios = require('axios');
 const {responses, urls, images} = require('../config')
@@ -35,11 +35,14 @@ class ContentValidator {
 
     }
 
+    /**
+     * @description check if attachment is image
+     * @param {MessageAttachment} msgAttach
+     */
     attachIsImage(msgAttach) {
         let url = msgAttach.url;
         return url.indexOf("png", url.length - "png".length /*or 3*/) !== -1;
     }
-
 
     /**
      * @param {Message} message
