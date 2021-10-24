@@ -40,8 +40,7 @@ class ContentValidator {
      * @param {MessageAttachment} msgAttach
      */
     attachIsImage(msgAttach) {
-        let url = msgAttach.url;
-        return url.indexOf("png", url.length - "png".length /*or 3*/) !== -1;
+        return msgAttach.url.match(/(png|jpg|jpeg)$/gmi)
     }
 
     /**
