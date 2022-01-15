@@ -30,10 +30,6 @@ module.exports = {
     //all keys have to be valid regex
     responses: [
         {
-            key: /^(?=.*root)(?=.*server).*$/mgi,
-            content: `A Root Game Server is a server divided into fully separate hosting environments. When you have RGS hosting, one of those environments is completely dedicated to you. That means you don't have to share resources (such as RAM or CPU) with other customers. You can host any game server you want.`
-        },
-        {
             key: /^(?=.*stopped)(?=.*server).*$/mgi,
             content: `Stopped servers continue to use dedicated system resources and therefore incur charges until you delete the server.`
         },
