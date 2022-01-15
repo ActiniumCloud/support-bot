@@ -57,5 +57,17 @@ module.exports = {
             key: /^(?=.*trust).*$/mgi,
             content: `You can ask our clients here or visit our trustpilot page, and if you still feel untrusted, feel free to add some credits and test it out quickly within a few clicks. You might check #why-actiniumcloud as well.`
         },
+        {
+            key: /^(?=.*high)(?=.*ram).*$/mgi,
+            content: `If you are hosting a Minecraft Java Server, peaking RAM near the limit is normal. This is due to JVM (Java) taking all of the available RAM initially because of its garbage collection technology.`
+        },
+        {
+            key: /^(?=.*peak)(?=.*ram).*$/mgi,
+            content: `If you are hosting a Minecraft Java Server, peaking RAM near the limit is normal. This is due to JVM (Java) taking all of the available RAM initially because of its garbage collection technology.`
+        },
+        {
+            key: /^(?=.*free)(?=.*trial).*$/mgi,
+            content: `The code for a $5 free trial is **5USD4FREE**. To redeem it, go to https://my.actiniumcloud.com/ and click on your available credits which will give you a button to redeem the code.`
+        },
     ]
 }
