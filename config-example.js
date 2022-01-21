@@ -55,7 +55,11 @@ module.exports = {
         },
         {
             key: /^(?=.*trust).*$/mgi,
-            content: `You can ask our clients here or visit our trustpilot page, and if you still feel untrusted, feel free to add some credits and test it out quickly within a few clicks. You might check #why-actiniumcloud as well.`
+            content: `Feeling skeptical? Feel free to ask our clients or visit our Trustpilot page here; https://www.trustpilot.com/review/actiniumcloud.com. You may also check <#922041919134105660> or use the code **5USD4FREE** in the billing panel for a $5 free trial .`
+        },
+        {
+            key: /^(?=.*scam).*$/mgi,
+            content: `Feeling skeptical? Feel free to ask our clients or visit our Trustpilot page here; https://www.trustpilot.com/review/actiniumcloud.com. You may also check <#922041919134105660> or use the code **5USD4FREE** in the billing panel for a $5 free trial .`
         },
         {
             key: /^(?=.*high)(?=.*ram).*$/mgi,
