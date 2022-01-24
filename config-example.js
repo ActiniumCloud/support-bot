@@ -71,7 +71,7 @@ module.exports = {
         },
         {
             key: /^(?=.*free)(?=.*trial).*$/mgi,
-            content: `The code for a $5 free trial is **5USD4FREE**. To redeem it, go to https://my.actiniumcloud.com/ and click on your available credits which will give you a button to redeem the code.`
+            content: `The code for a $1 free trial is **1USD4FREE**. To redeem it, go to https://my.actiniumcloud.com/ and click on your available credits which will give you a button to redeem the code.`
         },
     ]
 }
