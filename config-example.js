@@ -2,20 +2,24 @@ module.exports = {
     token: 'Nope',
 
     bot: { // https://discordjs.guide/popular-topics/faq.html#how-do-i-check-if-a-guild-member-has-a-specific-role
-        activity: 'PLAYING',
-        activity_message: 'with humans',
+        activity: 'WATCHING',
+        activity_message: 'for your support queries',
         activity_status: 'online',
     },
 
     //the channels the bot is allowed to use
     support_channels: [ //channel ids
         '892818008915972176'
+        '897042945671327746'
     ],
 
     //configured allowed urls
     urls: {
         allowed_urls: [
             'https://pastebin.com'
+            'https://actiniumcloud.com'
+            'https://my.actiniumcloud.com'
+            'https://cp.actiniumcloud.com'
         ],
         max_content_size_in_bytes: 314572, //0.3mb
     },
